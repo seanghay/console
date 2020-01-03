@@ -1,5 +1,6 @@
 ## Console
 A simple yet concise `console.log` for Android
+
 [ ![Build Status](https://travis-ci.org/seanghay/studio.svg?branch=master)](https://travis-ci.org/seanghay/console)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [ ![Bintray](https://api.bintray.com/packages/seanghay/maven/console/images/download.svg) ](https://bintray.com/seanghay/maven/console/_latestVersion)
