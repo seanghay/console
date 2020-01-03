@@ -1,3 +1,6 @@
+apply from: './dependencies.gradle'
+apply from: './versionsPlugin.gradle'
+
 buildscript {
     apply from: rootProject.file('dependencies.gradle')
 
@@ -8,6 +11,9 @@ buildscript {
 
     dependencies {
         classpath "com.android.tools.build:gradle:$deps.gradle"
+        classpath "com.diffplug.spotless:spotless-plugin-gradle:" + versions.spotlessPlugin
+        classpath 'com.novoda:bintray-release:' + versions.bintrayRelease
+        classpath 'com.github.ben-manes:gradle-versions-plugin:' + versions.versionsPlugin
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$deps.kotlin"
     }
 }

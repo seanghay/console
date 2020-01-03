@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply from: rootProject.file('dependencies.gradle')
+apply from: rootProject.file('bintrayconfig.gradle')
 
 android {
     compileSdkVersion builds.sdkVersion
@@ -30,3 +31,6 @@ dependencies {
     implementation "androidx.core:core-ktx:${deps['core-ktx']}"
     testImplementation "junit:junit:$deps.junit"
 }
+
+
+apply from: rootProject.file('spotless.gradle')

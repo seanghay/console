@@ -1,6 +1,10 @@
 ext.versions = [
         publish: '1.0.0-alpha01',
-        code: 1
+        code: 1,
+        gradlePlugin      : '3.5.1',
+        spotlessPlugin    : '3.24.3',
+        versionsPlugin    : '0.25.0',
+        bintrayRelease    : '0.9.1',
 ]
 
 ext.builds = [
