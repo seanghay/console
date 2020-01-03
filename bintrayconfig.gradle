@@ -35,6 +35,7 @@ afterEvaluate {
 }
 
 def (user, key) = getBintrayUserAndKey()
+
 publish {
     bintrayUser = user
     bintrayKey = key
