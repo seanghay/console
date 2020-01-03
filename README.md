@@ -1,11 +1,13 @@
 ## Console
-A simple yet concise `console.log` for Android
+A simple yet concise JavaScript `console.log` for Android
 
 [ ![Build Status](https://travis-ci.org/seanghay/studio.svg?branch=master)](https://travis-ci.org/seanghay/console)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [ ![Bintray](https://api.bintray.com/packages/seanghay/maven/console/images/download.svg) ](https://bintray.com/seanghay/maven/console/_latestVersion)
 
+> I wrote this library because I want to feel like I'm writting  JavaScript `console` in Android
 ------------
+
 
 ## Usage
 It uses the default tag which is `Console` to print to `logcat`
@@ -99,3 +101,8 @@ fun main() {
 implementation('com.seanghay.console:console:1.0.0-alpha01')
 ```
 
+### Issues
+
+If you find anything unsual or bugs in this library, please open a new issue or pull request. I will try to solve it as soon as possible. 
+
+Also, please let me know if anything can be improved! :smile:
