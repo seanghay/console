@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply from: rootProject.file('dependencies.gradle')
+
+android {
+    compileSdkVersion builds.sdkVersion
+    buildToolsVersion builds.toolsVersion
+
+    defaultConfig {
+        applicationId "com.seanghay.consolesample"
+        minSdkVersion builds.minSdk
+        targetSdkVersion builds.sdkVersion
+        versionCode versions.code
+        versionName versions.publish
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$deps.kotlin"
+    implementation "androidx.appcompat:appcompat:$deps.appcompat"
+    implementation "androidx.core:core-ktx:${deps['core-ktx']}"
+    implementation project(':console')
+
+    testImplementation "junit:junit:$deps.junit"
+}
