@@ -97,6 +97,8 @@ fun main() {
 
 ### Installation
 
+[![](https://jitpack.io/v/seanghay/console.svg)](https://jitpack.io/#seanghay/console)
+
 ```gradle
 allprojects {
   repositories {
