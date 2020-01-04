@@ -87,7 +87,7 @@ fun main() {
    
    Thread.sleep(1_000L)
    
-   console.timeReset("profile")
+   console.timeEnd("profile")
    
    // profile: 1001 millis
 }
@@ -98,7 +98,18 @@ fun main() {
 ### Installation
 
 ```groovy
-implementation('com.seanghay.console:console:1.0.0-alpha01')
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+
+```groovy
+dependencies {
+  implementation 'com.github.seanghay:console:1.0.0-alpha01'
+}
 ```
 
 ### Issues
