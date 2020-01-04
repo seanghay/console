@@ -97,7 +97,7 @@ fun main() {
 
 ### Installation
 
-```groovy
+```gradle
 allprojects {
   repositories {
     ...
@@ -106,7 +106,7 @@ allprojects {
 }
 ```
 
-```groovy
+```gradle
 dependencies {
   implementation 'com.github.seanghay:console:1.0.0-alpha01'
 }
